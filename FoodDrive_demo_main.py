@@ -13,7 +13,7 @@ data = pd.read_csv('combined_data.csv', encoding='latin1')
 
 # Page 1: Dashboard
 def dashboard():
-    st.image('Logo.png', width=1000)
+    st.image('Logo.png', use_column_width='auto')
 
     st.subheader("💡 Abstract:")
 
