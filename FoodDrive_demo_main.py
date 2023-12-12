@@ -29,7 +29,7 @@ def dashboard():
     - Given digital route information (as provided by the Londonderry Chapel) allows for deeper analysis into which routes/areas will yield the most bags.
     '''
     inspiration = open("Abstract.txt","r")
-    st.write(inspiration)
+    st.write(inspiration.read())
 
     st.subheader("👨🏻‍💻 What our Project Does?")
 
@@ -39,7 +39,7 @@ def dashboard():
     This allows for better analysis of routes while also providing volunteers with more information to decide if they can do a certain route.
     '''
     what_it_does = open("what_it_does.txt","r")
-    st.write(what_it_does)
+    st.write(what_it_does.read())
 
 
 # Page 2: Exploratory Data Analysis (EDA)
