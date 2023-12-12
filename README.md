@@ -9,7 +9,7 @@
 </h1>
 
 
-### PROJECT TITLE: Food Drive Optimization
+### PROJECT TITLE: Food Drive Optimization App
 
 Welcome to the repository for our Capstone project at Norquest College. This project aims to improve the efficiency of drop-off and pick-up processes and optimize resource allocation for a more effective food drive campaign.
 
