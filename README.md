@@ -28,7 +28,11 @@ Proposed Solution & Models used
 
 The repository contains the following files:
 
-data.csv: Describe dataset
+FoodDrive_demo_main.py: This file is being pulled by stream lit and is the main code of the app.
+combined_data.csv: This is the dataset being used for EDA and pulling dropdown values from, and contains the collected and formatted food drive data
+random_forest_classifier_model.pkl: This is a train random forest model that predicts if a given route will take more than 1 hour to complete.
+requirements.txt: Contains list of required packages to be installed to properly run the main file.
+Logo.png: NorQuest College Logo displayed within the app.
 
 
 ### Team Members
