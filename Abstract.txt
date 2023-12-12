@@ -1,0 +1,9 @@
+The Edmonton Food Drive Project is focused on utilizing machine learning to optimize food donation management. It aims to improve the efficiency of drop-off and pick-up processes, enhance route planning, and optimize resource allocation for a more effective food drive campaign.
+
+    Lessons learned:
+    - No standardized processes for volunteers doing Bag Collection
+      - Volunteers had varying amounts of information about their routes
+      - Volunteers were mostly estimating the bags collected, doors in route, and time taken
+    - Missing key data collection fields
+      - Route number not being collected caused the specificity of the data to be reduced
+    - Given digital route information (as provided by the Londonderry Chapel) allows for deeper analysis into which routes/areas will yield the most bags.

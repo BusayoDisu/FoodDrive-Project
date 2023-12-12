@@ -16,7 +16,7 @@ def dashboard():
     st.image('Logo.png', width=500)
 
     st.subheader("💡 Abstract:")
-
+    
     inspiration = '''
     The Edmonton Food Drive Project is focused on utilizing machine learning to optimize food donation management. It aims to improve the efficiency of drop-off and pick-up processes, enhance route planning, and optimize resource allocation for a more effective food drive campaign.
 
@@ -28,7 +28,7 @@ def dashboard():
       - Route number not being collected caused the specificity of the data to be reduced
     - Given digital route information (as provided by the Londonderry Chapel) allows for deeper analysis into which routes/areas will yield the most bags.
     '''
-
+    inspiration = open("Abstract.txt","r")
     st.write(inspiration)
 
     st.subheader("👨🏻‍💻 What our Project Does?")
@@ -38,7 +38,7 @@ def dashboard():
     A Machine Learning model is used to estimate if a route or set of routes will take longer than an hour to complete.
     This allows for better analysis of routes while also providing volunteers with more information to decide if they can do a certain route.
     '''
-
+    what_it_does = open("what_it_does.txt","r")
     st.write(what_it_does)
 
 

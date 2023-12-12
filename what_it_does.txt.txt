@@ -1,0 +1,3 @@
+Analysis on the data collected
+    A Machine Learning model is used to estimate if a route or set of routes will take longer than an hour to complete.
+    This allows for better analysis of routes while also providing volunteers with more information to decide if they can do a certain route.
