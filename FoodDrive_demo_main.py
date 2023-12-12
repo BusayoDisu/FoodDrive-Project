@@ -119,12 +119,12 @@ def machine_learning_modeling():
     if st.button("Predict"):
         # Load the trained model
         model = joblib.load('random_forest_classifier_model.pkl')
-
+        st.write('Model Loaded')
         # Prepare input data for prediction
         input_data = [[stake_num, ward_branch_num, adult_volunteers, youth_volunteers, donation_bags_collected, routes_completed, doors_in_route, bags_per_door, bags_per_route, total_volunteers]]
 
         # Make prediction
-        prediction = model.predict(input_data)
+        prediction = model.predict(input_data)        
         prediction_label = ['More','Less']
 
 
