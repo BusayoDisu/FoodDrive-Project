@@ -4,7 +4,6 @@ import plotly.express as px
 import joblib
 import os
 from gradientai import Gradient
-import sklearn
 
 os.environ['GRADIENT_ACCESS_TOKEN'] = st.secrets['GRADIENT_ACCESS_TOKEN']
 os.environ['GRADIENT_WORKSPACE_ID'] = st.secrets['GRADIENT_WORKSPACE_ID']
