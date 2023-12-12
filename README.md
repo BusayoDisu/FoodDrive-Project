@@ -6,13 +6,13 @@
 
 
 
-# <h1 align="center" id="heading"># Project Title-Team Members: Person 1, Person 2
+# <h1 align="center" id="heading"># Edmonton Food Drive Optimization Project - Team Members: Kaden Shubert, Kemi Akinduyile, Busayo Disu, Shanika Rolle
 </h1>
 
 
  
 
-### PROJECT TITLE: Project Title
+### PROJECT TITLE: Edmonton Food Drive Optimization Project
 
 Welcome to the repository for our Capstone project at Norquest College. This project aims to ...
 
