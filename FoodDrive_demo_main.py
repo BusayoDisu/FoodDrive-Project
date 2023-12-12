@@ -29,7 +29,7 @@ def dashboard():
     - Given digital route information (as provided by the Londonderry Chapel) allows for deeper analysis into which routes/areas will yield the most bags.
     '''
     inspiration = open("Abstract.txt","r")
-    st.write(inspiration.read())
+    st.markdown(inspiration.read())
 
     st.subheader("👨🏻‍💻 What our Project Does?")
 
