@@ -39,7 +39,7 @@ def dashboard():
     This allows for better analysis of routes while also providing volunteers with more information to decide if they can do a certain route.
     '''
     what_it_does = open("what_it_does.txt","r")
-    st.write(what_it_does.read())
+    st.markdown(what_it_does.read())
 
 
 # Page 2: Exploratory Data Analysis (EDA)
