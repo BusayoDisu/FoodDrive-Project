@@ -77,7 +77,7 @@ def exploratory_data_analysis():
     ward_mean = px.bar(orientation='h', y=ward_mean_data.index, x=ward_mean_data.values,
                       labels={'y':'Ward/Branch','x':'Average Donation Bags Collected per Route'},
                       title='Average Donation Bags Collected per Route in each Ward/Branch',
-                      height=650
+                      height=750
                       )
     st.plotly_chart(ward_mean)
 
@@ -86,7 +86,7 @@ def exploratory_data_analysis():
     ward_total = px.bar(orientation='h', y=ward_total_data.index, x=ward_total_data.values,
                       labels={'y':'Ward/Branch','x':'Total Donation Bags Collected'},
                       title='Total Donation Bags Collected in each Ward/Branch',
-                      height=650
+                      height=750
                       )
     st.plotly_chart(ward_total)
 
