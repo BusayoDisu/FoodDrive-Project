@@ -13,7 +13,7 @@ data = pd.read_csv('combined_data.csv', encoding='latin1')
 
 # Page 1: Dashboard
 def dashboard():
-    st.image('Logo.png', width=500)
+    st.image('Logo.png', width=500, use_column_width='auto')
 
     st.subheader("💡 Abstract:")
     
@@ -52,7 +52,7 @@ def exploratory_data_analysis():
     # Visualize the distribution of numerical features using Plotly
 
     fig = px.histogram(data_cleaned, x='Time to Complete (min)', nbins=20, labels={'Time to Complete (min)': 'Time to Complete'},title="Distribution of time to complete")
-    st.plotly_chart(fig)
+    st.plotly_chart(fig, use_container_width=True)
 
     ### Stake Bags EDA###
     # Average Bags/Route per Stake
@@ -61,7 +61,7 @@ def exploratory_data_analysis():
                         labels={'y':'Stake','x':'Average Donation Bags Collected per Route'},
                         title='Average Donation Bags Collected per Route in each Stake'
                         )
-    st.plotly_chart(stake_mean)
+    st.plotly_chart(stake_mean, use_container_width=True)
 
     # Total Bags/Stake
     stake_total_data = data_cleaned.groupby(by='Stake')['Donation Bags Collected'].sum().sort_values()
@@ -69,7 +69,7 @@ def exploratory_data_analysis():
                         labels={'y':'Stake','x':'Total Donation Bags Collected'},
                         title='Total Donation Bags Collected in each Stake'
                         )
-    st.plotly_chart(stake_total)
+    st.plotly_chart(stake_total, use_container_width=True)
 
     ### Ward Bags EDA ###
     # Average Bags/Route per Ward
@@ -77,18 +77,18 @@ def exploratory_data_analysis():
     ward_mean = px.bar(orientation='h', y=ward_mean_data.index, x=ward_mean_data.values,
                       labels={'y':'Ward/Branch','x':'Average Donation Bags Collected per Route'},
                       title='Average Donation Bags Collected per Route in each Ward/Branch',
-                      height=800
+                      height=650
                       )
-    st.plotly_chart(ward_mean)
+    st.plotly_chart(ward_mean, use_container_width=True)
 
     # Total Bags/Ward
     ward_total_data = data_cleaned.groupby(by='Ward/Branch')['Donation Bags Collected'].sum().sort_values()
     ward_total = px.bar(orientation='h', y=ward_total_data.index, x=ward_total_data.values,
                       labels={'y':'Ward/Branch','x':'Total Donation Bags Collected'},
                       title='Total Donation Bags Collected in each Ward/Branch',
-                      height=800
+                      height=650
                       )
-    st.plotly_chart(ward_total)
+    st.plotly_chart(ward_total, use_container_width=True)
 
 # Page 3: Machine Learning Modeling
 def machine_learning_modeling():
@@ -138,7 +138,7 @@ def neighbourhood_mapping():
     st.title("Stake/Ward Map")
     st.write("This is an interactive map try selecting a route, ward or stake to get more information about it!")
     st.markdown("""
-    <iframe src="https://www.google.com/maps/d/embed?mid=1kiXlZT8tTH_cDYqfP5lKoQ8Jt7A_FbM&ehbc=2E312F&noprof=1" width="800" height="640"></iframe>
+    <iframe src="https://www.google.com/maps/d/embed?mid=1kiXlZT8tTH_cDYqfP5lKoQ8Jt7A_FbM&ehbc=2E312F&noprof=1" width="100%" height="640"></iframe>
     """, unsafe_allow_html=True)
 
 # Page 5: Data Collection
