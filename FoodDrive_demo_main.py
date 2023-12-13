@@ -61,7 +61,7 @@ def exploratory_data_analysis():
                         labels={'y':'Stake','x':'Average Donation Bags Collected per Route'},
                         title='Average Donation Bags Collected per Route in each Stake'
                         )
-    st.plotly_chart(stake_mean, use_container_width=True)
+    st.plotly_chart(stake_mean)
 
     # Total Bags/Stake
     stake_total_data = data_cleaned.groupby(by='Stake')['Donation Bags Collected'].sum().sort_values()
@@ -69,7 +69,7 @@ def exploratory_data_analysis():
                         labels={'y':'Stake','x':'Total Donation Bags Collected'},
                         title='Total Donation Bags Collected in each Stake'
                         )
-    st.plotly_chart(stake_total, use_container_width=True)
+    st.plotly_chart(stake_total)
 
     ### Ward Bags EDA ###
     # Average Bags/Route per Ward
@@ -79,7 +79,7 @@ def exploratory_data_analysis():
                       title='Average Donation Bags Collected per Route in each Ward/Branch',
                       height=650
                       )
-    st.plotly_chart(ward_mean, use_container_width=True)
+    st.plotly_chart(ward_mean)
 
     # Total Bags/Ward
     ward_total_data = data_cleaned.groupby(by='Ward/Branch')['Donation Bags Collected'].sum().sort_values()
@@ -88,7 +88,7 @@ def exploratory_data_analysis():
                       title='Total Donation Bags Collected in each Ward/Branch',
                       height=650
                       )
-    st.plotly_chart(ward_total, use_container_width=True)
+    st.plotly_chart(ward_total)
 
 # Page 3: Machine Learning Modeling
 def machine_learning_modeling():
