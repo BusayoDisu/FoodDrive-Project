@@ -47,7 +47,7 @@ def exploratory_data_analysis():
     st.title("Exploratory Data Analysis")
     st.markdown(f"**Disclaimer:** The data used in this app consists ONLY of data collected in collaboration with NorQuest College during the 2023 Food Drive Project and does not represent the entire Food Drive.")
     # Rename columns for clarity
-    data_cleaned = data
+    data_cleaned = data.copy()
 
     # Visualize the distribution of numerical features using Plotly
 
