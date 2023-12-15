@@ -72,8 +72,16 @@ def exploratory_data_analysis():
     st.plotly_chart(stake_total)
 
     ### Ward Bags EDA ###
+    ## Add Stake Filter Option ##    
+    stake_selection = st.multiselect(label='Select Stake(s) to filter by',options=data_cleaned['Stake'].unique(),
+                                    placeholder='Select 1 or more values to filter the charts below.'                                 
+                                    )    
+    filtered_data = data_cleaned.loc[data_cleaned['Stake'].isin(stake_selection)]    
+    if len(stake_selection) == 0: 
+      filtered_data = data_cleaned
+    
     # Average Bags/Route per Ward
-    ward_mean_data = data_cleaned.groupby(by='Ward/Branch')['Bags/Route'].mean().sort_values()
+    ward_mean_data = filtered_data.groupby(by='Ward/Branch')['Bags/Route'].mean().sort_values()
     ward_mean = px.bar(orientation='h', y=ward_mean_data.index, x=ward_mean_data.values,
                       labels={'y':'Ward/Branch','x':'Average Donation Bags Collected per Route'},
                       title='Average Donation Bags Collected per Route in each Ward/Branch',
@@ -82,7 +90,7 @@ def exploratory_data_analysis():
     st.plotly_chart(ward_mean)
 
     # Total Bags/Ward
-    ward_total_data = data_cleaned.groupby(by='Ward/Branch')['Donation Bags Collected'].sum().sort_values()
+    ward_total_data = filtered_data.groupby(by='Ward/Branch')['Donation Bags Collected'].sum().sort_values()
     ward_total = px.bar(orientation='h', y=ward_total_data.index, x=ward_total_data.values,
                       labels={'y':'Ward/Branch','x':'Total Donation Bags Collected'},
                       title='Total Donation Bags Collected in each Ward/Branch',
