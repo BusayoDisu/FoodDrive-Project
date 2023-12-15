@@ -106,7 +106,7 @@ def machine_learning_modeling():
     ward_encoding = {'Namao Ward' : 0,'Lee Ridge Ward' : 1,'Blackmud Creek Ward' : 2,'Rabbit Hill Ward' : 3,'Clareview Ward' : 4,'Crawford Plains Ward' : 5,'Silver Berry Ward' : 6,'Connors Hill Ward' : 7,'Stony Plain Ward' : 8,'Londonderry Ward' : 9,'Southgate Ward' : 10,'Greenfield Ward' : 11,'Rutherford Ward' : 12,'Griesbach Ward' : 13,'Ellerslie Ward' : 14,'Forest Heights Ward' : 15,'Coronation Park Ward' : 16,'Woodbend Ward' : 17,'Wainwright Branch' : 18,'Terwillegar Park Ward' : 19,'Rio Vista Ward' : 20,'Wild Rose Ward' : 21,'Windsor Park YSA Ward' : 22,'Strathcona Married Student Ward' : 23,'Drayton Valley Ward' : 24,'Beaumont Ward' : 25,'Belmead Ward' : 26}
 
     st.title("Machine Learning Modeling")
-    st.write("Enter the details to predict if it will take > 1h to complete:")
+    st.write("Enter the details to predict how long the route(s) will take to complete:")
 
     # Input fields for user to enter data
     stake = st.selectbox("Select a Stake",data['Stake'].unique())
