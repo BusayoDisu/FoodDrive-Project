@@ -73,8 +73,8 @@ def exploratory_data_analysis():
 
     ### Ward Bags EDA ###
     ## Add Stake Filter Option ##    
-    stake_selection = st.multiselect(label='Select Stake(s) to filter by',options=data_cleaned['Stake'].unique(),
-                                    placeholder='Select 1 or more values to filter the charts below.'                                 
+    stake_selection = st.multiselect(label='Select Stake(s) to filter the Wards displayed below:',options=data_cleaned['Stake'].unique(),
+                                    placeholder='Please select 1 or more values.'                                 
                                     )    
     filtered_data = data_cleaned.loc[data_cleaned['Stake'].isin(stake_selection)]    
     if len(stake_selection) == 0: 
