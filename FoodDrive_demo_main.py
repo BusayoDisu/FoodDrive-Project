@@ -139,9 +139,15 @@ def machine_learning_modeling():
 
 
         # Display the prediction
-        st.success(f"It will take {prediction_label[prediction[0]]} than 1 hour to complete {'these routes.' if routes_completed > 1 else 'this route.'}")
-
+        #st.success(f"It will take {prediction_label[prediction[0]]} than 1 hour to complete {'these routes.' if routes_completed > 1 else 'this route.'}")
+        
         # You can add additional information or actions based on the prediction if needed
+        ## Regression ##
+        reg_model = joblib.load('random_forest_regressor_model.pkl')
+        reg_scaler = joblib.load('scaler_random_forest_regressor_model.pkl')
+        reg_input = reg_scaler.transform([[routes_completed,adult_volunteers,doors_in_route,youth_volunteers,donation_bags_collected]])
+        reg_prediction = reg_model.predict(reg_input)
+        st.success(f"It will take approximately {int(reg_prediction[0]) if reg_prediction[0] < 60 else round(reg_prediction[0]/60,2)} {'minutes' if reg_prediction[0] < 60 else 'hours'} to complete {'these routes.' if routes_completed > 1 else 'this route.'}")
 # Page 4: Stake/Ward Map
 
 def neighbourhood_mapping():
