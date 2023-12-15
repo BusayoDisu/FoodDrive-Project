@@ -79,13 +79,15 @@ def exploratory_data_analysis():
     filtered_data = data_cleaned.loc[data_cleaned['Stake'].isin(stake_selection)]    
     if len(stake_selection) == 0: 
       filtered_data = data_cleaned
+    ward_chart_height = 750
+    if len(filtered_data.groupby(by='Ward/Branch')) <= 14: ward_chart_height = 450
     
     # Average Bags/Route per Ward
     ward_mean_data = filtered_data.groupby(by='Ward/Branch')['Bags/Route'].mean().sort_values()
     ward_mean = px.bar(orientation='h', y=ward_mean_data.index, x=ward_mean_data.values,
                       labels={'y':'Ward/Branch','x':'Average Donation Bags Collected per Route'},
                       title='Average Donation Bags Collected per Route in each Ward/Branch',
-                      height=750
+                      height=ward_chart_height
                       )
     st.plotly_chart(ward_mean)
 
@@ -94,7 +96,7 @@ def exploratory_data_analysis():
     ward_total = px.bar(orientation='h', y=ward_total_data.index, x=ward_total_data.values,
                       labels={'y':'Ward/Branch','x':'Total Donation Bags Collected'},
                       title='Total Donation Bags Collected in each Ward/Branch',
-                      height=750
+                      height=ward_chart_height
                       )
     st.plotly_chart(ward_total)
 
