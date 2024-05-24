@@ -34,3 +34,9 @@ Our team consists of the following members:
 [Busayo Disu](https://www.linkedin.com/in/olubusayo-disu/)
 
 ## Check out the app [here](https://fooddrive-project-riq8cknmcird3nxzrvbcga.streamlit.app/)
+
+## Link to Model Development Notebook
+https://colab.research.google.com/drive/16_Q0IL6L1ZuD_B0fIVZQMjI1yS5qMLZ7#scrollTo=z8b7WA58juVa
+
+## Link to Food Mapping Notebook
+https://colab.research.google.com/drive/142rFGBlegifLeqRMg-873R4DNbYhPMfz#scrollTo=iB1SSVWbuvUU
