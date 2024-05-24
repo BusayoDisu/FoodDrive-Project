@@ -21,6 +21,7 @@ The repository contains the following files:
 * random_forest_classifier_model.pkl: This is a train random forest model that predicts if a given route will take more than 1 hour to complete.
 * requirements.txt: Contains a list of required packages to be installed to properly run the main file.
 * Logo.png: NorQuest College Logo displayed within the app.
+* Food Drive Mapping: To visualize the various routes for volunteers
 
 
 ### Team Members
