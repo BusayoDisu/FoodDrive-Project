@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Edmonton Food Drive Ward Mapping</name>
+    <description>Imported from Google Sheets. Last updated 2023</description>
+    <NetworkLink>
+      <name>Edmonton Food Drive Ward Mapping</name>
+      <Link>
+        <href><![CDATA[https://www.google.com/maps/d/u/0/kml?forcekml=1&mid=1xych3q6SLdy5f2WdPC0GIQrU-hA9wk8]]></href>
+      </Link>
+    </NetworkLink>
+  </Document>
+</kml>
