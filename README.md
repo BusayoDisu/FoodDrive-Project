@@ -40,3 +40,6 @@ https://colab.research.google.com/drive/16_Q0IL6L1ZuD_B0fIVZQMjI1yS5qMLZ7#scroll
 
 ## Link to Food Mapping Notebook
 https://colab.research.google.com/drive/142rFGBlegifLeqRMg-873R4DNbYhPMfz#scrollTo=iB1SSVWbuvUU
+
+## Link to Map
+https://www.google.com/maps/d/u/0/edit?mid=1iWj5_TXUUAJt3hgOJ4k9ah_2V_p8Vmo&usp=sharing
