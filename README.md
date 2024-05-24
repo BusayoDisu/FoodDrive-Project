@@ -4,7 +4,7 @@
      height="auto"/>
 </p>
 
-<h1 align="center" id="heading">Food Drive Optimization Project App Demo <br/> Team Members: Kaden Shubert, Kemi Akinduyile, Busayo Disu, Shanika Rolle
+<h1 align="center" id="heading">Food Drive Optimization Project App Demo <br/> Team Members: Busayo Disu, Kemi Akinduyile, Kaden Shubert, Shanika Rolle
 </h1>
 
 
